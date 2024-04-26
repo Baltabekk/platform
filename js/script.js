@@ -33,7 +33,7 @@ classesList.addEventListener('click', (e) => {
                 topicsList.classList.add('topics-list');
                 item.topics.forEach((topic) => {
                     const topicElement = document.createElement('li');
-                    topicElement.innerHTML = `<a href="html\sait.html?topicId=${topic.id}" class="topic-link" data-topic="${topic.id}">${topic.name}</a>`;
+                    topicElement.innerHTML = `<a href="html\index.html?topicId=${topic.id}" class="topic-link" data-topic="${topic.id}">${topic.name}</a>`;
                     topicsList.appendChild(topicElement);
                 });
                 // Проверяем, есть ли уже список тем в контейнере, иначе добавляем
